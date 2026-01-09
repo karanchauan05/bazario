@@ -88,7 +88,7 @@ export function PostAdForm() {
             price: Number(formData.price),
             description: formData.description,
             category: formData.category as CategoryId,
-            condition: formData.condition as any,
+            condition: formData.condition as Listing['condition'],
             images: formData.images.length > 0 ? formData.images : ['https://images.unsplash.com/photo-1550258987-190a2d41a8ba?q=80&w=300&auto=format&fit=crop'],
             postedAt: new Date().toISOString(),
             currency: '$',

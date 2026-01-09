@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Zen_Kaku_Gothic_Antique } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/layout/Navbar";
@@ -11,6 +11,13 @@ const zenKaku = Zen_Kaku_Gothic_Antique({
   subsets: ["latin"],
   variable: "--font-zen",
 });
+
+export const viewport: Viewport = {
+  themeColor: [
+    { media: '(prefers-color-scheme: light)', color: '#FCF7F3' },
+    { media: '(prefers-color-scheme: dark)', color: '#0B485D' },
+  ],
+};
 
 export const metadata: Metadata = {
   title: {

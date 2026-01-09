@@ -1,4 +1,4 @@
-import { Listing } from "@/lib/types";
+import { Listing, CategoryId } from "@/lib/types";
 
 const DESCRIPTIONS = [
     "Barely used, in excellent condition. Selling because I upgraded.",
@@ -89,7 +89,7 @@ const generateListings = (): Listing[] => {
                 price: Math.floor(Math.random() * 2000) + 50,
                 currency: '$',
                 description: pick(DESCRIPTIONS),
-                category: category as any,
+                category: category as CategoryId,
                 images: [
                     pick(IMAGES_BY_CATEGORY[category] || IMAGES_BY_CATEGORY['electronics'])
                 ],

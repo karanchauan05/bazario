@@ -1,36 +1,53 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Bazario Marketplace
 
-## Getting Started
+A premium, lifestyle-focused marketplace platform built with Next.js (App Router), TypeScript, and Tailwind CSS. Branded as **Bazario**.
+Designed for performance, SEO, and accessibility.
 
-First, run the development server:
+## Tech Stack
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Framework:** [Next.js 14+](https://nextjs.org/) (App Router)
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS + Custom Utility Helpers
+- **Icons:** Lucide React
+- **Validation:** Client-side custom validation
+- **Deployment Target:** Vercel / Netlify (Static Export compatible)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Browse & Search:**
+  - Home page with Hero, Top Categories, and Featured Listings.
+  - Category pages with filters layout.
+  - Dynamic Item Detail pages with Image Gallery.
+- **Posting Experience:**
+  - "Post Ad" form with validation for required fields, price, and description.
+  - Mock image upload simulation.
+- **UI/UX:**
+  - Mobile-first responsive design.
+  - Clean, modern aesthetic inspired by modern marketplaces.
+  - Loading states and Skeleton screens (prepared structure).
+  - Toast/Success feedback on form submission.
+- **SEO:**
+  - Dynamic Metadata generation for Categories and Listings.
+  - Semantic HTML structure.
+  - Optimized images with `next/image`.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Setup Steps
 
-## Learn More
+1.  **Clone the repository** (if applicable) or navigate to the project folder:
+    ```bash
+    cd classified-ads-platform
+    ```
 
-To learn more about Next.js, take a look at the following resources:
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3.  **Run the development server:**
+    ```bash
+    npm run dev
+    ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+4.  **Open in browser:**
+    Navigate to `http://localhost:3000`.
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.

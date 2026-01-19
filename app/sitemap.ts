@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next';
 import { CATEGORIES } from '@/lib/data/categories';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-    const baseUrl = 'https://bazario.vercel.app'; // Update with actual domain
+    const baseUrl = 'https://bazario-sable.vercel.app';
 
     const categoryUrls = CATEGORIES.map((cat) => ({
         url: `${baseUrl}/categories/${cat.slug}`,

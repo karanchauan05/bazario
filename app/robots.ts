@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
             allow: '/',
             disallow: '/private/',
         },
-        sitemap: 'https://bazario.vercel.app/sitemap.xml', // Update with actual domain if known, or localhost
+        sitemap: 'https://bazario-sable.vercel.app/sitemap.xml',
     };
 }
